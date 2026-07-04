@@ -1,26 +1,103 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fbfbfa;
+  --foreground: #0b1f22;
+
+  /* Brand palette, derived from the Elevate Marketing Company mark */
+  --color-brand-950: #071e1c;
+  --color-brand-900: #0a2b28;
+  --color-brand-800: #0e3c38;
+  --color-brand-700: #135049;
+  --color-brand-600: #186961;
+  --color-brand-500: #1f8478;
+  --color-brand-400: #38a89a;
+  --color-brand-300: #6cc9bb;
+  --color-brand-200: #a6e3d5;
+  --color-brand-100: #d6f3ea;
+  --color-brand-50: #eefaf5;
+
+  --color-navy-950: #060f16;
+  --color-navy-900: #0b1c26;
+  --color-navy-800: #122a38;
+  --color-navy-700: #1b3c4d;
+
+  --color-mint-400: #5eead4;
+  --color-mint-300: #99f6e4;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --color-brand-50: var(--color-brand-50);
+  --color-brand-100: var(--color-brand-100);
+  --color-brand-200: var(--color-brand-200);
+  --color-brand-300: var(--color-brand-300);
+  --color-brand-400: var(--color-brand-400);
+  --color-brand-500: var(--color-brand-500);
+  --color-brand-600: var(--color-brand-600);
+  --color-brand-700: var(--color-brand-700);
+  --color-brand-800: var(--color-brand-800);
+  --color-brand-900: var(--color-brand-900);
+  --color-brand-950: var(--color-brand-950);
+
+  --color-navy-700: var(--color-navy-700);
+  --color-navy-800: var(--color-navy-800);
+  --color-navy-900: var(--color-navy-900);
+  --color-navy-950: var(--color-navy-950);
+
+  --color-mint-300: var(--color-mint-300);
+  --color-mint-400: var(--color-mint-400);
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-jakarta);
+
+  --animate-fade-up: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-marquee: marquee 32s linear infinite;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--color-brand-300);
+  color: var(--color-navy-950);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(11, 31, 34, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(11, 31, 34, 0.05) 1px, transparent 1px);
+  background-size: 44px 44px;
 }
