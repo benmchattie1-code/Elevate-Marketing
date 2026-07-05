@@ -22,6 +22,9 @@ import {
   TrendingUp,
   Heart,
   MapPin,
+  ScanSearch,
+  Camera,
+  ClipboardCheck,
   type LucideIcon,
 } from "lucide-react";
 
@@ -382,3 +385,46 @@ export const aboutStory = {
   heading: "Welcome to Elevate Marketing Company",
   body: "At Elevate Marketing Company, we help businesses build a stronger online presence through strategic marketing, creative content and consistent execution. Whether you're looking to grow your audience, improve your social media, or create a marketing strategy that delivers real value, we're here to help.",
 };
+
+export type OneOffService = {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+};
+
+export const oneOffServices: OneOffService[] = [
+  {
+    icon: ScanSearch,
+    title: "Social Media Audit",
+    description:
+      "A full review of your Facebook, Instagram and LinkedIn presence, covering branding, content and clear recommendations to improve results.",
+  },
+  {
+    icon: Lightbulb,
+    title: "Marketing Strategy Session",
+    description:
+      "A focused 90-minute session covering your business goals, competitor landscape and a 90-day action plan to move forward.",
+  },
+  {
+    icon: Camera,
+    title: "Content Day",
+    description:
+      "A half or full day on-site creating photos, videos, Reels and B-roll, enough content to fill your socials for the month ahead.",
+  },
+  {
+    icon: ClipboardCheck,
+    title: "Meta Ads Setup",
+    description:
+      "Your Facebook and Instagram ads set up properly from the start, pixel setup, campaign creation, audience research and ad copy.",
+  },
+];
+
+export const addOnServices: string[] = [
+  "Additional Reel",
+  "Extra Social Post",
+  "Email Campaign",
+  "Blog Article",
+  "Website Updates",
+  "Canva Template Pack",
+  "Brand Guidelines",
+];
