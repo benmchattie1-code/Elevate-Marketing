@@ -36,9 +36,9 @@ export function Hero() {
               transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
               className="mt-6 text-balance font-display text-4xl font-semibold leading-[1.08] tracking-tight text-navy-950 sm:text-5xl lg:text-6xl"
             >
-              Marketing that shows up,{" "}
+              Ready to{" "}
               <span className="bg-gradient-to-r from-brand-600 via-brand-500 to-brand-400 bg-clip-text text-transparent">
-                every single week
+                elevate your marketing?
               </span>
             </motion.h1>
 

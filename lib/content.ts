@@ -37,18 +37,6 @@ export const site = {
   serviceArea: "Working with businesses across Scotland and the UK",
 };
 
-export type Stat = {
-  value: string;
-  label: string;
-};
-
-export const stats: Stat[] = [
-  { value: "5+", label: "Years of marketing experience" },
-  { value: "3", label: "Industries served: hospitality, care & energy" },
-  { value: "0", label: "Long-term contracts required" },
-  { value: "30", label: "Days notice to cancel, that's it" },
-];
-
 export type PainPoint = string;
 
 export const painPoints: PainPoint[] = [
