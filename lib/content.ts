@@ -301,6 +301,11 @@ export const faqs: FaqItem[] = [
       "Yes. We create engaging, on-brand content tailored to your business, including social media graphics, captions, short-form video ideas, and marketing materials. Where required, we can also organise on-site content creation or work with content you already have.",
   },
   {
+    question: "Can you rebuild or create our website?",
+    answer:
+      "Yes. Whether you're starting from scratch or want us to rebuild an existing site, we design simple, effective websites that are mobile-friendly and set up with basic SEO from the start. Once your site is live, we can also handle ongoing updates and maintenance.",
+  },
+  {
     question: "Can I cancel?",
     answer:
       "Absolutely. We believe in building long-term partnerships through results, not lengthy contracts. You can cancel at any time by providing 30 days' written notice.",
