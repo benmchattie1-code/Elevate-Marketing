@@ -120,7 +120,7 @@ export const services: Service[] = [
     icon: BarChart3,
     title: "Paid Advertising",
     description:
-      "Meta advertising across Facebook and Instagram, from setup to optimisation, so your budget works harder.",
+      "Paid advertising across Meta and LinkedIn, from setup to optimisation, so your budget works harder.",
     features: [
       "Campaign setup & audience targeting",
       "Ad creative",
@@ -247,7 +247,7 @@ export const pricingPackages: PricingPackage[] = [
       "12 social media posts per month",
       "4 short-form videos/Reels",
       "Community management",
-      "Meta Ads management (ad spend excluded)",
+      "Paid ads management, Meta & LinkedIn (ad spend excluded)",
       "Monthly content planning",
       "Competitor review",
       "Monthly strategy meeting",
@@ -262,7 +262,7 @@ export const pricingPackages: PricingPackage[] = [
     features: [
       "Unlimited social media posting (within agreed plan)",
       "Reels & content creation",
-      "Meta Ads",
+      "Paid Ads, Meta & LinkedIn",
       "Email marketing",
       "Website updates",
       "Monthly analytics dashboard",
@@ -306,7 +306,7 @@ export const faqs: FaqItem[] = [
   {
     question: "Do you manage paid advertising?",
     answer:
-      "Yes. We manage paid advertising across Meta platforms, including Facebook and Instagram. We can help with campaign setup, audience targeting, ad creative, optimisation and reporting. Please note that advertising spend is billed separately from our management fees.",
+      "Yes. We manage paid advertising across Meta platforms (Facebook and Instagram) and LinkedIn. We can help with campaign setup, audience targeting, ad creative, optimisation and reporting. Please note that advertising spend is billed separately from our management fees.",
   },
   {
     question: "How often will we meet?",
@@ -407,9 +407,9 @@ export const oneOffServices: OneOffService[] = [
   },
   {
     icon: ClipboardCheck,
-    title: "Meta Ads Setup",
+    title: "Paid Ads Setup",
     description:
-      "Your Facebook and Instagram ads set up properly from the start, pixel setup, campaign creation, audience research and ad copy.",
+      "Your Meta and LinkedIn ads set up properly from the start, pixel setup, campaign creation, audience research and ad copy.",
   },
 ];
 

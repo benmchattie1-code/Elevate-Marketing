@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     "content creation agency",
     "branding agency Aberdeen",
     "email marketing UK",
-    "paid advertising Meta ads",
+    "paid advertising Meta and LinkedIn ads",
     "small business marketing agency",
   ],
   authors: [{ name: siteName }],
