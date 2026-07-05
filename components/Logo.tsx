@@ -5,24 +5,14 @@ export function Logo({ className, dark }: { className?: string; dark?: boolean }
   if (dark) {
     return (
       <span className={clsx("inline-flex items-center gap-2.5", className)}>
-        <svg
-          viewBox="0 0 40 40"
-          width="32"
-          height="32"
-          fill="none"
+        <Image
+          src="/logo-icon.png"
+          alt=""
           aria-hidden
-          className="shrink-0"
-        >
-          <circle cx="20" cy="20" r="19" stroke="url(#logo-ring)" strokeWidth="1.5" />
-          <path d="M20 10L28 28H12L20 10Z" stroke="#a6e3d5" strokeWidth="2" strokeLinejoin="round" />
-          <path d="M20 16L24.5 26H15.5L20 16Z" fill="#0e3c38" stroke="#a6e3d5" strokeWidth="1.2" strokeLinejoin="round" />
-          <defs>
-            <linearGradient id="logo-ring" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-              <stop stopColor="#6cc9bb" />
-              <stop offset="1" stopColor="#38a89a" />
-            </linearGradient>
-          </defs>
-        </svg>
+          width={341}
+          height={342}
+          className="h-8 w-8 shrink-0"
+        />
         <span className="font-display text-lg font-bold leading-none tracking-tight text-white">
           ELEVATE
           <span className="block text-[0.55rem] font-semibold tracking-[0.2em] text-brand-200">
