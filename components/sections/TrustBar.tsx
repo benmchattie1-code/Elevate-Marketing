@@ -4,7 +4,7 @@ import { stats } from "@/lib/content";
 
 export function TrustBar() {
   return (
-    <section className="border-y border-navy-950/[0.06] bg-white py-12">
+    <section className="border-y border-navy-950/[0.06] bg-gradient-to-r from-brand-50/70 via-white/40 to-brand-50/70 py-12">
       <Container>
         <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
           {stats.map((stat, i) => (

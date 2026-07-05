@@ -3,13 +3,15 @@ import clsx from "clsx";
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
 import { Reveal } from "../ui/Reveal";
+import { GradientBlob } from "../ui/GradientBlob";
 import { Button } from "../ui/Button";
 import { pricingPackages } from "@/lib/content";
 
 export function Pricing() {
   return (
-    <section id="pricing" className="py-24 sm:py-28">
-      <Container>
+    <section id="pricing" className="relative overflow-hidden py-24 sm:py-28">
+      <GradientBlob className="-right-32 top-0 h-80 w-80 bg-brand-100/50" />
+      <Container className="relative">
         <SectionHeading
           eyebrow="Packages"
           title="Simple, flexible monthly packages"

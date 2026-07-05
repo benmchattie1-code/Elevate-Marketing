@@ -69,7 +69,7 @@ export function Header() {
 
         <div className="hidden md:block">
           <Button href="/#contact" size="md">
-            Book a Discovery Call
+            Book a Strategy Call
           </Button>
         </div>
 
@@ -105,7 +105,7 @@ export function Header() {
                 </Link>
               ))}
               <Button href="/#contact" size="md" className="mt-2 justify-center">
-                Book a Discovery Call
+                Book a Strategy Call
               </Button>
             </div>
           </motion.div>

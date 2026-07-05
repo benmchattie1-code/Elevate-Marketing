@@ -15,9 +15,9 @@ export default function ServicesPage() {
       <Services />
       <PageCTA
         title="Not sure which service fits your business?"
-        description="Every package can be tailored around your goals. Have a look at our pricing, or book a free discovery call to talk it through."
+        description="Every package can be tailored around your goals. Have a look at our pricing, or book a free strategy call to talk it through."
         primaryHref="/#contact"
-        primaryLabel="Book a Free Discovery Call"
+        primaryLabel="Book a Free Strategy Call"
         secondaryHref="/pricing"
         secondaryLabel="See Our Packages"
       />

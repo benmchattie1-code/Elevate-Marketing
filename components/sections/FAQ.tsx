@@ -6,6 +6,7 @@ import { Plus } from "lucide-react";
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
 import { Reveal } from "../ui/Reveal";
+import { GradientBlob } from "../ui/GradientBlob";
 import { faqs } from "@/lib/content";
 
 function FaqRow({ question, answer }: { question: string; answer: string }) {
@@ -54,17 +55,18 @@ function FaqRow({ question, answer }: { question: string; answer: string }) {
 
 export function FAQ() {
   return (
-    <section id="faq" className="py-24 sm:py-28">
-      <Container>
+    <section id="faq" className="relative overflow-hidden py-24 sm:py-28">
+      <GradientBlob className="-right-24 bottom-0 h-72 w-72 bg-mint-300/10" />
+      <Container className="relative">
         <SectionHeading
           eyebrow="FAQ"
           title="Questions, answered"
-          description="Everything you need to know before booking a discovery call."
+          description="Everything you need to know before booking a strategy call."
         />
 
         <div className="mx-auto mt-14 max-w-3xl">
           <Reveal>
-            <div>
+            <div className="rounded-3xl border border-navy-950/[0.06] bg-white/70 px-6 shadow-sm backdrop-blur-sm sm:px-10">
               {faqs.map((faq) => (
                 <FaqRow key={faq.question} question={faq.question} answer={faq.answer} />
               ))}

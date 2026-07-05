@@ -6,6 +6,7 @@ import { CheckCircle2, Loader2, Mail, MapPin, MessageSquare, XCircle } from "luc
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
 import { Reveal } from "../ui/Reveal";
+import { GradientBlob } from "../ui/GradientBlob";
 import { submitContactForm, type ContactFormState } from "@/app/actions";
 import { site } from "@/lib/content";
 
@@ -35,12 +36,13 @@ export function Contact() {
   const [state, formAction] = useActionState(submitContactForm, initialState);
 
   return (
-    <section id="contact" className="py-24 sm:py-28">
-      <Container>
+    <section id="contact" className="relative overflow-hidden py-24 sm:py-28">
+      <GradientBlob className="-left-24 top-20 h-80 w-80 bg-brand-100/50" />
+      <Container className="relative">
         <SectionHeading
           eyebrow="Get in touch"
           title="Ready to elevate your marketing?"
-          description="Tell us a little about your business and we'll be in touch to book your free discovery call."
+          description="Tell us a little about your business and we'll be in touch to book your free strategy call."
         />
 
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-[1fr_1.3fr]">
@@ -80,7 +82,7 @@ export function Contact() {
           <Reveal delay={0.1}>
             <form
               action={formAction}
-              className="rounded-3xl border border-navy-950/[0.06] bg-white p-8 shadow-sm sm:p-10"
+              className="rounded-3xl border border-navy-950/[0.06] bg-white/80 p-8 shadow-sm backdrop-blur-sm sm:p-10"
               noValidate
             >
               <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">

@@ -2,12 +2,15 @@ import { CheckCircle2, XCircle } from "lucide-react";
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
 import { Reveal } from "../ui/Reveal";
+import { GradientBlob } from "../ui/GradientBlob";
 import { aboutStory, helpPoints, painPoints } from "@/lib/content";
 
 export function About() {
   return (
-    <section id="about" className="relative py-24 sm:py-28">
-      <Container>
+    <section id="about" className="relative overflow-hidden py-24 sm:py-28">
+      <GradientBlob className="-right-40 top-10 h-96 w-96 bg-brand-100/60" />
+      <GradientBlob className="-left-32 bottom-0 h-80 w-80 bg-mint-300/10" />
+      <Container className="relative">
         <SectionHeading
           eyebrow="About Elevate"
           title={aboutStory.heading}
@@ -16,7 +19,7 @@ export function About() {
 
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
           <Reveal>
-            <div className="h-full rounded-3xl border border-navy-950/[0.06] bg-white p-8 shadow-sm sm:p-10">
+            <div className="h-full rounded-3xl border border-navy-950/[0.06] bg-white/80 p-8 shadow-sm backdrop-blur-sm sm:p-10">
               <div className="flex items-center gap-2.5 text-navy-950">
                 <XCircle size={20} className="text-navy-950/40" />
                 <h3 className="font-display text-xl font-semibold">Sound familiar?</h3>

@@ -191,7 +191,7 @@ export const processSteps: ProcessStep[] = [
   {
     icon: Search,
     step: "01",
-    title: "Discovery Call",
+    title: "Strategy Call",
     description: "A free, no-pressure conversation about your business, goals and where you're at today.",
   },
   {

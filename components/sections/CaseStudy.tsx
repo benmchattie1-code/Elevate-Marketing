@@ -3,12 +3,14 @@ import clsx from "clsx";
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
 import { Reveal } from "../ui/Reveal";
+import { GradientBlob } from "../ui/GradientBlob";
 import { caseStudy } from "@/lib/content";
 
 export function CaseStudy() {
   return (
-    <section className="py-24 sm:py-28">
-      <Container>
+    <section className="relative overflow-hidden py-24 sm:py-28">
+      <GradientBlob className="left-1/2 -top-10 h-72 w-[40rem] -translate-x-1/2 bg-brand-100/40" />
+      <Container className="relative">
         <SectionHeading
           eyebrow="How we think"
           title={`An example campaign: ${caseStudy.businessName}`}

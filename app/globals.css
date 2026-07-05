@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fbfbfa;
+  --background: #f6f9f8;
   --foreground: #0b1f22;
 
   /* Brand palette, derived from the Elevate Marketing Company mark */
@@ -78,7 +78,13 @@
 }
 
 body {
-  background: var(--background);
+  background:
+    radial-gradient(ellipse 70% 50% at 10% 0%, rgba(56, 168, 154, 0.14), transparent),
+    radial-gradient(ellipse 60% 45% at 100% 18%, rgba(94, 234, 212, 0.12), transparent),
+    radial-gradient(ellipse 55% 40% at 8% 55%, rgba(31, 132, 120, 0.09), transparent),
+    radial-gradient(ellipse 65% 45% at 95% 85%, rgba(56, 168, 154, 0.1), transparent),
+    var(--background);
+  background-attachment: fixed;
   color: var(--foreground);
 }
 

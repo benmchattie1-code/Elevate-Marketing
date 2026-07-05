@@ -60,7 +60,7 @@ export function Hero() {
               className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center"
             >
               <Button href="/#contact" size="lg">
-                Book a Free Discovery Call
+                Book a Free Strategy Call
                 <ArrowRight size={18} />
               </Button>
               <Button href="/pricing" variant="secondary" size="lg">
