@@ -144,8 +144,9 @@ export const services: Service[] = [
     icon: Globe,
     title: "Website Support",
     description:
-      "Simple, effective website updates and maintenance so your site keeps working as hard as the rest of your marketing.",
+      "Whether you need a brand new site built from scratch or ongoing updates, we keep your website working as hard as the rest of your marketing.",
     features: [
+      "New website builds",
       "New pages, images & content",
       "Menu, offer & promotion updates",
       "Mobile-friendly checks",
