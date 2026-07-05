@@ -1,8 +1,8 @@
-import { CheckCircle2, GraduationCap, XCircle } from "lucide-react";
+import { CheckCircle2, XCircle } from "lucide-react";
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
 import { Reveal } from "../ui/Reveal";
-import { aboutStory, founderCredentials, helpPoints, painPoints } from "@/lib/content";
+import { aboutStory, helpPoints, painPoints } from "@/lib/content";
 
 export function About() {
   return (
@@ -53,22 +53,6 @@ export function About() {
             </div>
           </Reveal>
         </div>
-
-        <Reveal delay={0.15}>
-          <div className="mx-auto mt-8 flex max-w-4xl flex-col items-start gap-5 rounded-3xl border border-navy-950/[0.06] bg-navy-950 p-8 sm:flex-row sm:items-center sm:p-10">
-            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white/10 text-brand-300">
-              <GraduationCap size={22} />
-            </span>
-            <div>
-              <h3 className="font-display text-lg font-semibold text-white">
-                {founderCredentials.heading}
-              </h3>
-              <p className="mt-2 text-sm leading-relaxed text-white/65">
-                {founderCredentials.body}
-              </p>
-            </div>
-          </div>
-        </Reveal>
       </Container>
     </section>
   );

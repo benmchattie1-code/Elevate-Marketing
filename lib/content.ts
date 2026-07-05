@@ -378,11 +378,6 @@ export const caseStudy = {
   ],
 };
 
-export const founderCredentials = {
-  heading: "Backed by real marketing experience",
-  body: "This isn't a first attempt at marketing. Behind Elevate sits a BA (Hons) in Marketing Management and an MSc in Marketing with Digital Strategy, plus over 5 years working across hospitality, care and oil & gas, industries where marketing has to earn its keep, not just look good.",
-};
-
 export const aboutStory = {
   heading: "Welcome to Elevate Marketing Company",
   body: "At Elevate Marketing Company, we help businesses build a stronger online presence through strategic marketing, creative content and consistent execution. Whether you're looking to grow your audience, improve your social media, or create a marketing strategy that delivers real value, we're here to help.",
