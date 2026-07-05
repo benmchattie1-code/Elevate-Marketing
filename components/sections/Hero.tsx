@@ -59,11 +59,11 @@ export function Hero() {
               transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
               className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center"
             >
-              <Button href="#contact" size="lg">
+              <Button href="/#contact" size="lg">
                 Book a Free Discovery Call
                 <ArrowRight size={18} />
               </Button>
-              <Button href="#pricing" variant="secondary" size="lg">
+              <Button href="/pricing" variant="secondary" size="lg">
                 <PlayCircle size={18} />
                 See Our Packages
               </Button>

@@ -1,16 +1,17 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Logo } from "./Logo";
 import { Button } from "./ui/Button";
 
 const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#services", label: "Services" },
-  { href: "#pricing", label: "Pricing" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/#about", label: "About" },
+  { href: "/services", label: "Services" },
+  { href: "/pricing", label: "Pricing" },
+  { href: "/#faq", label: "FAQ" },
 ];
 
 export function Header() {
@@ -50,24 +51,24 @@ export function Header() {
         Skip to content
       </a>
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-        <a href="#top" aria-label="Elevate Marketing Company home">
+        <Link href="/" aria-label="Elevate Marketing Company home">
           <Logo />
-        </a>
+        </Link>
 
         <div className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="text-sm font-medium text-navy-800/80 transition-colors hover:text-brand-700"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
 
         <div className="hidden md:block">
-          <Button href="#contact" size="md">
+          <Button href="/#contact" size="md">
             Book a Discovery Call
           </Button>
         </div>
@@ -94,16 +95,16 @@ export function Header() {
           >
             <div className="flex flex-col gap-1 px-6 py-4">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
                   className="rounded-lg px-3 py-2.5 text-base font-medium text-navy-900 hover:bg-brand-50"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
-              <Button href="#contact" size="md" className="mt-2 justify-center">
+              <Button href="/#contact" size="md" className="mt-2 justify-center">
                 Book a Discovery Call
               </Button>
             </div>

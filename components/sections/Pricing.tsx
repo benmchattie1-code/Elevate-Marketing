@@ -66,7 +66,7 @@ export function Pricing() {
                 </div>
 
                 <Button
-                  href="#contact"
+                  href="/#contact"
                   variant={pkg.featured ? "primary" : "secondary"}
                   className={clsx(
                     "mt-7 w-full justify-center",

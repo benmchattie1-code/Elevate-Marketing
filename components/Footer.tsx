@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Mail, MapPin } from "lucide-react";
 import { Logo } from "./Logo";
 import { Container } from "./ui/Container";
@@ -8,20 +9,20 @@ const columns = [
   {
     title: "Explore",
     links: [
-      { href: "#about", label: "About" },
-      { href: "#services", label: "Services" },
-      { href: "#pricing", label: "Pricing" },
-      { href: "#faq", label: "FAQ" },
-      { href: "#contact", label: "Contact" },
+      { href: "/#about", label: "About" },
+      { href: "/services", label: "Services" },
+      { href: "/pricing", label: "Pricing" },
+      { href: "/#faq", label: "FAQ" },
+      { href: "/#contact", label: "Contact" },
     ],
   },
   {
     title: "Services",
     links: [
-      { href: "#services", label: "Social Media Management" },
-      { href: "#services", label: "Content Creation" },
-      { href: "#services", label: "Branding" },
-      { href: "#services", label: "Paid Advertising" },
+      { href: "/services", label: "Social Media Management" },
+      { href: "/services", label: "Content Creation" },
+      { href: "/services", label: "Branding" },
+      { href: "/services", label: "Paid Advertising" },
     ],
   },
 ];
@@ -65,12 +66,12 @@ export function Footer() {
               <ul className="mt-4 space-y-3">
                 {col.links.map((link) => (
                   <li key={link.label}>
-                    <a
+                    <Link
                       href={link.href}
                       className="text-sm text-white/60 transition-colors hover:text-brand-300"
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
